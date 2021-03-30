@@ -1,0 +1,46 @@
+.section__features{
+    &-category {
+    color: $color-first;
+    font-size: 3.5rem; 
+    padding: 2rem;
+
+    
+    }
+
+    &-content--box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 7rem;
+        justify-items: center;
+
+        @media only screen and (max-width: $bp-desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(21.8rem, 1fr));
+        }
+        @media only screen and (min-width: $bp-big-desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(22.3rem, 1fr));
+        }
+        @media only screen and (min-width: $bp-bigest-desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        }
+        @media only screen and (min-width: $bp-too-big-desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        }
+        
+    }
+    &-content {
+    display: grid;
+    justify-items: center;
+    }
+
+    &-text {
+        margin-top: .5rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+}
+.svg-img {
+    height: 10rem;
+    width: 10rem;
+    fill: $color-first;
+}

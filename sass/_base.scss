@@ -1,0 +1,77 @@
+//..............................VARIABLES ............................. 
+$color-first: #F8931D;
+$color-first-dark: #be7b2d;
+$color-first-light: #f8b72c;
+$color-second: #527C32;
+$color-third: #BF1E2E;
+$color-fourth: #91248F;
+
+$Grey-light-1: #faf9f9;
+$Grey-light-2: #f4f2f2;
+$Grey-light-3: #f0eeee;
+$Grey-light-4: #ccc;
+
+$Grey-dark-1: #333;
+$Grey-dark-2: #777;
+$Grey-dark-3: #999;
+
+$font-Display: 'Playfair Display', serif;
+
+.margin-bottom-medium {
+    margin-bottom: 5rem;
+}
+.margin-bottom-small {
+    margin-bottom: 3rem;
+}
+
+// Breakpoints variables ...........
+$bp-mini-phone: 25em; //400px
+$bp-phone: 37.5em; // 600px
+$bp-tab-port: 56.25em;  //900px
+$bp-tab-land: 75em;    // 1200px
+$bp-desktop: 100em;     // 1600px
+$bp-big-desktop: 100.06em; // 1601px
+$bp-bigest-desktop: 131.25em; // 2100px
+$bp-too-big-desktop: 143.75em;  // 2300px
+//..............................VARIABLES  END .............................   
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    
+    @media only screen and (max-width: $bp-phone) {
+        font-size: 35%;
+    }
+    @media only screen and (max-width: $bp-tab-port) {
+        font-size: 45% !important;
+    }
+    @media only screen and (max-width: $bp-tab-land) {
+        font-size: 50% !important;
+    }
+    @media only screen and (max-width: $bp-desktop) {
+        font-size: 65%;
+    }
+    @media only screen and (min-width: $bp-big-desktop) {
+        font-size: 81.25%;
+    }
+    @media only screen and (min-width: $bp-bigest-desktop) {
+        font-size: 85%;
+    }
+    @media only screen and (min-width: $bp-too-big-desktop) {
+        font-size: 93.75%;
+    }
+
+}
+
+body {
+    font-family: 'Work Sans', 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

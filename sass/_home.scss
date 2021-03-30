@@ -1,0 +1,45 @@
+.header-2 {
+    background-size: cover;
+    background-position: center;
+}
+
+.section__room {
+    padding: 7rem 0 2rem 0;
+    background-color: $Grey-light-3;
+}
+
+.section__features {
+    padding: 6rem 8rem;
+    background-color: $Grey-light-3;
+}
+.section__features-sub {
+    padding: 6rem 8rem;
+    background-color: $Grey-light-3;
+}
+
+.section__Gallery {
+    padding: 6rem 8rem;
+    background-color: $Grey-light-3;
+
+    @media only screen and (max-width: $bp-phone) {
+        padding: 6rem 4rem;
+    }
+    @media only screen and (max-width: $bp-mini-phone) {
+        padding: 6rem 4rem;
+    }
+}
+
+.footer {
+    padding: 4rem 0 2rem 3rem;
+    background-color: $Grey-light-3;
+    
+}
+.footer__white {
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 8rem 8rem 2rem 8rem;
+    clip-path: polygon(0 4%, 100% 17%, 100% 100%, 0% 100%);
+}
+.section-testimonial {
+    padding: 7rem 0 2rem 0;
+    background-color: $Grey-light-3;
+}
